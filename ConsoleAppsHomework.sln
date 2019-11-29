@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_MultiplicationAndSum", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_CurrencyConverter", "CurrencyConverter\03_CurrencyConverter.csproj", "{DDC9352F-4295-4BB7-8E1F-4347FA14AC6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_EvenNumber", "EvenNumber\04_EvenNumber.csproj", "{2C3EABC9-D433-4EAA-A0B3-B10528CEC3CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DDC9352F-4295-4BB7-8E1F-4347FA14AC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDC9352F-4295-4BB7-8E1F-4347FA14AC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDC9352F-4295-4BB7-8E1F-4347FA14AC6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3EABC9-D433-4EAA-A0B3-B10528CEC3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3EABC9-D433-4EAA-A0B3-B10528CEC3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3EABC9-D433-4EAA-A0B3-B10528CEC3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3EABC9-D433-4EAA-A0B3-B10528CEC3CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
