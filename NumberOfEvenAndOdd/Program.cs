@@ -13,7 +13,6 @@ namespace NumberOfEvenAndOdd
 
             while (true)
             {
-
                 int min, limit; // Начало и конец диапазона
 
                 uint evenCount = 0; // Количетво чётыных
@@ -44,7 +43,7 @@ namespace NumberOfEvenAndOdd
             Console.WriteLine("");
 
                 while (min <= limit)
-                { 
+                {
                     if (min % 2 == 0)
                     {
                         evenCount++;
