@@ -33,6 +33,20 @@ namespace Triangles
 
             // Второй треугольник
 
+            count = 10;
+
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 10; j < count; j--)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+                count -= 1;
+            }
+
+            Console.WriteLine();
+
             Console.ReadLine();
         }
     }
