@@ -47,6 +47,25 @@ namespace Triangles
 
             Console.WriteLine();
 
+            // Третий треугольник
+
+            count = 1;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 9; j >= count; j--)
+                {
+                    Console.Write(" ");
+                    
+                }
+                for (int k = 1; k <= count; k++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+                count += 1;
+            }
+
             Console.ReadLine();
         }
     }
