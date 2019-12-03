@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Triangles
 {
+
     class Program
     {
         static void Main(string[] args)
@@ -17,9 +14,12 @@ namespace Triangles
 
             // Первый треугольник
 
+            Console.Write("Высота треугольника: ");
+            int height = int.Parse(Console.ReadLine());
+
             uint count = 1;
 
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= height; i++)
             {
                 for (int j = 1; j <= count; j++)
                 {
@@ -35,9 +35,9 @@ namespace Triangles
 
             count = 1;
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < height; i++)
             {
-                for (int j = 10; j >= count; j--)
+                for (int j = height; j >= count; j--)
                 {
                     Console.Write("#");
                 }
@@ -51,9 +51,9 @@ namespace Triangles
 
             count = 1;
 
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= height; i++)
             {
-                for (int j = 9; j >= count; j--)
+                for (int j = (height-1); j >= count; j--)
                 {
                     Console.Write(" ");
                 }
@@ -71,13 +71,13 @@ namespace Triangles
 
             count = 1;
 
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= height; i++)
             {
                 for (int j = 2; j <= count; j++)
                 {
                     Console.Write(" ");
                 }
-                for (int k = 10; k >= count; k--)
+                for (int k = height; k >= count; k--)
                 {
                     Console.Write("#");
                 }
