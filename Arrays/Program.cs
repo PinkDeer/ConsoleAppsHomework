@@ -20,6 +20,7 @@ namespace Arrays
 
                 int[] Array = new int[max];
                 int number;
+                int even;
 
                 try
                 {
@@ -41,10 +42,23 @@ namespace Arrays
                 Console.WriteLine();
                 Console.WriteLine("Массив в обратном порядке:");
 
+                int evenSum = 0;
+
                 for (int i = Array.Length; i > 0; i--)
                 {
                     Console.WriteLine(Array[i-1]);
+
+                    even = Array[i - 1];
+                    if (even % 2 == 0)
+                    {
+                        evenSum = evenSum + even;
+                    }
+                    
+                    Console.WriteLine($"Чётное {even}");
+                    Console.WriteLine($"Cумма четных {evenSum}");
                 }
+
+                Console.WriteLine();
 
                 Console.ReadLine();
             }
