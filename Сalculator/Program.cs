@@ -25,7 +25,7 @@ namespace Сalculator
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("Вы вели строку, а не число.");
+                    Console.WriteLine("Вы ввели строку, а не число.");
                     Console.ReadKey();
                     continue;
                 }
