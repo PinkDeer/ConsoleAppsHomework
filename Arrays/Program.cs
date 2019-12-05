@@ -19,30 +19,26 @@ namespace Arrays
                 int max = int.Parse(Console.ReadLine());
 
                 int[] Array = new int[max];
-                int number;
-                int even;
 
                 try
                 {
                     for (int i = 0; i < Array.Length; i++)
                     {
-                        Console.Write("Введите занчение элемента массива: ");
-                        number = int.Parse(Console.ReadLine());
-                        Array[i] = number;
-                        
+                        Console.Write("\nВведите значение элемента массива: ");
+                        Array[i] = int.Parse(Console.ReadLine());
                     }
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("Вы ввели строку, а не число.");
+                    Console.WriteLine("\nВы ввели строку, а не число.");
                     Console.ReadKey();
                     continue;
                 }
 
-                Console.WriteLine();
-                Console.WriteLine("Массив в обратном порядке:");
+                Console.WriteLine("\nМассив в обратном порядке:");
 
                 int evenSum = 0;
+                int even;
 
                 for (int i = Array.Length; i > 0; i--)
                 {
@@ -53,12 +49,10 @@ namespace Arrays
                     {
                         evenSum = evenSum + even;
                     }
-                    
-                    Console.WriteLine($"Чётное {even}");
-                    Console.WriteLine($"Cумма четных {evenSum}");
+                   
                 }
 
-                Console.WriteLine();
+                Console.WriteLine($"\nCумма четных {evenSum}");
 
                 Console.ReadLine();
             }
