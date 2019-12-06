@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Arrays
 {
@@ -11,16 +12,25 @@ namespace Arrays
             // 3. Найти сумму четных чисел в массиве
             // 4. Найти наименьшее число в массиве
 
-
-
             while (true)
             {
-                Console.Write("Введите количество элементов массива: ");
-                int max = int.Parse(Console.ReadLine());
-
-                int[] Array = new int[max];
+                int count; // количество элементов в массиве
 
                 try
+                {
+                    Console.Write("\nВведите количество элементов массива: ");
+                    count = int.Parse(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("\nНекорректный формат вводимых данных.");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                int[] Array = new int[count]; // объявление массива
+
+                try // добавление элементов в массив
                 {
                     for (int i = 0; i < Array.Length; i++)
                     {
@@ -30,7 +40,7 @@ namespace Arrays
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("\nВы ввели строку, а не число.");
+                    Console.WriteLine("\nНекорректный формат вводимых данных.");
                     Console.ReadKey();
                     continue;
                 }
@@ -53,6 +63,9 @@ namespace Arrays
                 }
 
                 Console.WriteLine($"\nCумма четных {evenSum}");
+
+
+                Console.WriteLine($"Минимальное значение: {Array.Min()}");
 
                 Console.ReadLine();
             }
